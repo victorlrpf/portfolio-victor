@@ -1,15 +1,15 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Victor",
+  lastName: "Ferreira",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Desenvolvedor Full-Stack",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  email: "victorlrpf@gmail.com",
+  location: "America/Sao_Paulo", // IANA time zone identifier para São Paulo, Brasil
   languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -30,12 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/victorlrpf",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/victor-ferreira-88728b216/",
   },
   {
     name: "Threads",
@@ -55,16 +55,16 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Criando pontes entre lógica e imaginação</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Projeto em destaque: <strong className="ml-4">codCraft</strong></>,
+    href: "/work/codcraft-app-quiz-logica",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Sou Victor, desenvolvedor full-stack apaixonado por criar soluções que encantam usuários e resolvem problemas reais.
+      <br /> De dia, desenvolvo sistemas robustos em C#, ASP.NET e React. À noite, me aventuro por projetos autorais com lógica e criatividade.
     </>
   ),
 };
@@ -87,32 +87,26 @@ const about = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Introdução",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Victor Ferreira é um desenvolvedor full-stack de São Paulo, com forte atuação em sistemas web
+        utilizando C#, ASP.NET, Python, React e APIs modernas. Com uma paixão por lógica de programação,
+        ele também desenvolve experiências interativas para aprendizado e diversão.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Experiência Profissional",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Projetos Pessoais",
+        timeframe: "2022 - Presente",
+        role: "Full-Stack Developer",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Desenvolvimento do <strong>codCraft</strong>, um aplicativo educacional gamificado com quiz de lógica de programação.</>,
+          <>Criação de APIs REST e GraphQL integradas ao Supabase, com foco em performance e escalabilidade.</>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -125,18 +119,12 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Pesquisador Acadêmico",
+        timeframe: "2020 - 2022",
+        role: "Desenvolvedor Científico",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Pesquisa em criptografia quântica usando Python, Qiskit e Silq, aplicada em segurança da informação.</>,
+          <>Publicação de artigos científicos com foco em algoritmos e experimentos em computação quântica.</>,
         ],
         images: [],
       },
@@ -158,8 +146,18 @@ const about = {
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Habilidades Técnicas",
     skills: [
+      {
+        title: "C# e ASP.NET",
+        description: <>Desenvolvimento de sistemas web robustos, APIs e integração com MySQL e outros bancos.</>,
+        images: [],
+      },
+      {
+        title: "React + Tailwind + Supabase",
+        description: <>Criação de interfaces modernas e interativas com integração de backend em tempo real.</>,
+        images: [],
+      },
       {
         title: "Figma",
         description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
